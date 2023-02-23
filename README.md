@@ -1,34 +1,45 @@
-# TaskTrackingSystem
-Добрый день!
+# Task Tracking System
+In this project, I developed a task tracking system.
+The main objects of the system: tasks, users and projects.
+The repository contains a project with sources, compiled class files, a jar archive, and database with demo data.
 
-В этом проекте я разработала систему по отслеживанию задач.
-Основные объекты системы: задачи, пользователи и проекты.
-В репозитории проект с исходниками, скомпилированные class файлами, jar-архив, БД с демо данными.
+The project implemented a menu with basic functionality for managing system objects.
 
-В проекте реализовано меню с базовым функционалом по управлению объектами системы. 
+Each task in the system has the following attributes: `ID`, `Project`, `Topic`, `Priority`, `User`, `Description`.
 
-Каждая задача в системе обладает следующими атрибутами: ID, Project, Topic, Priority, User, Description. 
+When you are creating a new task, you can only specify the ID of an existing project and the ID of an existing user in the system.
+Otherwise, the program will ask you to try again or return to the main menu.
+To comply with the condition above, the system will also not allow you to delete a user or project if the objects have active tasks.
 
-При создании новой задачи можно указать ID только существующего проекта и ID существующего в системе пользователя.
-В противном случае программа попросит повторить попытку ввода или вернуться в главное меню.
-Для соблюдения условия выше, система также не позволит удалить пользователя или проект, если у объектов есть активные задачи. 
+H2 is used for data storage, at the root of the repository there is a database with demo data - test.mv.db. This database is  default in the project.
+The user of the system has the ability to specify which file to use, for that you need to `select the path to the data file` in the command menu.
 
-Для хранения данных используется H2, в корне репозитория находится БД с демо данными — test.mv.db. По умолчанию в проекте указана именно эта БД. 
-У пользователя системы есть возможность указать какой файл использовать, для этого нужно "выбрать путь к файлу с данными" в меню команд.
+In the program are implemented next functions:
 
-В программе реализованы следующие команды:
-[1] Создать проект;
-[2] Создать задачу;
-[3] Создать пользователя;
-[4] Показать все проекты;
-[5] Показать все задачи;
-[6] Показать все задачи по выбранному проекту;
-[7] Показать все задачи для выбранного пользователя;
-[8] Показать всех юзеров;
-[9] Удалить юзера;
-[10] Удалить задачу;
-[11] Удалить проект;
-[12] Выбрать путь к файлу с данными;
-[0] Выйти.
+[1] Create project
 
-Приложение консольное, без графического интерфейса.
+[2] Create task
+
+[3] Create user
+
+[4] Show all projects
+
+[5] Show all tasks
+
+[6] Show all project`s tasks 
+
+[7] Show all user`s tasks
+
+[8] Show all users
+
+[9] Delete user
+
+[10] Delete tast
+
+[11] Delete project
+
+[12] Choose path to data
+
+[0] Quit
+
+**The application is console, without a graphical interface.**
