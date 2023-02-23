@@ -12,7 +12,7 @@ Otherwise, the program will ask you to try again or return to the main menu.
 To comply with the condition above, the system will also not allow you to delete a user or project if the objects have active tasks.
 
 H2 is used for data storage, at the root of the repository there is a database with demo data - test.mv.db. This database is  default in the project.
-The user of the system has the ability to specify which file to use, for that you need to `select the path to the data file` in the command menu.
+The user of the system has the ability to specify which file to use, to do that user need to `select the path to the data file` in the command menu.
 
 In the program are implemented next functions:
 
